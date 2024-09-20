@@ -11,18 +11,43 @@
     <main>
         <div class="mockup-phone">
             <div class="camera"></div>
-            <div class="display">
+            <div class="display ">
               <div class="artboard artboard-demo phone-1"><div class="stats shadow">
                 <div class="stat">
                   <div class="stat-value">89400</div>
                   <div class="stat-desc">Available balance</div>
                 </div>
               </div>
-              <button class="btn btn-active btn-primary">Add Money</button>
-              <button class="btn btn-active btn-secondary">Cash out</button>
+              <div class="flex gap-2">
+                <button class="btn btn-active btn-primary">Add Money</button>
+                <button class="btn btn-active btn-secondary">Cash out</button>
+              </div>
+            </div>
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl -mt-40">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input type="text"  id="input-addMoney" placeholder="Amount" class="input input-bordered" autocomplete="off" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">pin</span>
+                  </label>
+                  <input id="input-pin" type="password" placeholder="pin" class="input input-bordered" required />
+                  <label class="label">
+                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                  </label>
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary" id="btn-addMoney">Add money</button>
+                </div>
+              </form>
             </div>
             </div>
           </div>
     </main>
+    <script src="moneyManage.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@ const phonehonenum=document.getElementById('phone-number').value
 const pinnum=document.getElementById('pin-num').value
 
 // wrong way to validate
-if(phonehonenum==='5' && pinnum==='1234'){
+if(phonehonenum==='5' && pinnum==='..2*'){
     console.log('login successful');
     window.location.href='./homePage.html';
 }
